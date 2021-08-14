@@ -1,0 +1,12 @@
+<view class="mine">
+	<button wx:if="{{!userInfo}}" bind:tap="goToLogin" class="login">登录</button>
+	<button wx:if="{{userInfo}}" bind:tap="logOut" class="login">退出登录</button>
+
+	<view wx:if="{{userInfo}}" class="userinfo-item">昵称 : {{userInfo.userName}}</view>
+	<view wx:if="{{userInfo}}" class="userinfo-item">个性签名 : {{userInfo.remark}}</view>
+	<view wx:if="{{userInfo}}" class="userinfo-item">邮箱 : {{userInfo.email}}</view>
+	<view wx:if="{{userInfo}}" class="userinfo-item">手机号 : {{userInfo.phonenumber}}</view>
+	<view wx:if="{{userInfo}}" class="userinfo-item">性别 : {{userInfo.sex==0?"男":"女"}}</view>
+	<view wx:if="{{userInfo}}" style="background: url('{{userInfo.avatar}}') center center no-repeat" class="avatar">
+	</view>
+</view>

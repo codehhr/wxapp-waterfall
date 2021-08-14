@@ -1,0 +1,28 @@
+.swiper-item {
+	width: 100%;
+	height: 400rpx;
+	background-size: cover;
+}
+
+.news-list{
+	margin: 40rpx;
+}
+
+.news-list-item{
+	margin: 20rpx 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.cover{
+	width: 200rpx;
+	height: 120rpx;
+	background-size: cover;
+	border-radius: 10rpx;
+}
+
+.news-list-item .title{
+	font-size: 0.8rem;
+	width: 60%;
+}

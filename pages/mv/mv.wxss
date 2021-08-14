@@ -1,0 +1,61 @@
+/* pages/mv/mv.wxss */
+.mv-list {
+  padding: 0 20rpx;
+  width: 750rpx;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #f5f5f5;
+}
+
+.mv-list-item {
+  margin: 10rpx 0;
+  width: 340rpx;
+  border-radius: 12rpx;
+  background-color: #ffffff;
+  overflow: hidden;
+  box-shadow: 2px 2px 6px 4px #d6d6d6;
+}
+
+.mv-list-item-footer {
+  padding: 0 20rpx;
+  font-size: 28rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cover {
+  width: 100%;
+  background-size: cover;
+}
+
+.name {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.mv-list-item-footer-bottom {
+  margin: 10rpx 0;
+  font-size: 0.7rem;
+  color: #b6b6b6;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mv-list-item-footer-bottom .bottom-left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mv-list-item-footer-bottom .bottom-left .count {
+  margin-right: 6rpx;
+  display: flex;
+}

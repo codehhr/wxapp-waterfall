@@ -1,0 +1,10 @@
+<view class="login">
+	<view class="form-item">
+		<input type="text" model:value="{{ username }}" placeholder="测试号：codehhr" required />
+	</view>
+
+	<view class="form-item">
+		<input type="password" model:value="{{ password }}" placeholder="密码：111111" required />
+	</view>
+	<button bind:tap="login" class="login-btn" block>登录</button>
+</view>

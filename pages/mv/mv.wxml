@@ -1,0 +1,18 @@
+<view class="mv">
+	<view class="mv-list">
+		<view class="mv-list-item" data-id="{{item.id}}" bind:tap="goToMvDetail" wx:for="{{mvList}}" wx:key="index">
+			<image class="cover" mode="widthFix" src="{{item.cover}}"></image>
+			<view class="mv-list-item-footer">
+				<view class="name">{{item.name}}</view>
+				<view class="mv-list-item-footer-bottom">
+					<view class="bottom-left">
+						<view class="count play-count">
+							<iconfont name="play"></iconfont><text>{{item.playCount}}</text>
+						</view>
+					</view>
+					<view class="artist-name"><text>{{item.artistName}}</text></view>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>

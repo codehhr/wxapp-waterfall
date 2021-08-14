@@ -1,0 +1,24 @@
+<view class="waterfall">
+	<view class="left-post-list">
+		<view class="post-item" wx:for="{{leftPostList}}" wx:key="index">
+			<image mode="widthFix" class="cover" src="{{item.coverImgUrl}}"></image>
+			<view class="post-item-footer">
+				<view class="title">{{item.title}}</view>
+				<view class="chat-icon" data-postsId="{{item.postsId}}">
+					<iconfont bind:tap="wsChat" name="chat"></iconfont>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="right-post-list">
+		<view class="post-item" wx:for="{{rightPostList}}" wx:key="index">
+			<image mode="widthFix" class="cover" src="{{item.coverImgUrl}}"></image>
+			<view class="post-item-footer">
+				<view class="title">{{item.title}}</view>
+				<view class="chat-icon" data-postsId="{{item.postsId}}">
+					<iconfont bind:tap="wsChat" name="chat"></iconfont>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>

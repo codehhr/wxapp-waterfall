@@ -1,0 +1,48 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/chat/chat",
+          "pathName": "pages/chat/chat",
+          "query": "postsid=787",
+          "scene": null
+        },
+        {
+          "name": "pages/chat/chat",
+          "pathName": "pages/chat/chat",
+          "query": "postsid=787",
+          "scene": null
+        },
+        {
+          "name": "pages/posts/posts",
+          "pathName": "pages/posts/posts",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/mv/mv",
+          "pathName": "pages/mv/mv",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/mvdetail/mvdetail",
+          "pathName": "pages/mvdetail/mvdetail",
+          "query": "id=5365245",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

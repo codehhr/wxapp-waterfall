@@ -1,0 +1,13 @@
+.login {
+  padding: 40rpx;
+}
+
+.form-item {
+  margin: 40rpx auto;
+}
+
+.form-item input {
+  padding: 0 40rpx;
+  height: 68rpx;
+  border: 1px solid #d3d3d3;
+}

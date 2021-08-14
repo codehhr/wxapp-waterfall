@@ -1,0 +1,23 @@
+<view class="index">
+	<!-- swiper start -->
+	<view class="page-section page-section-spacing swiper">
+		<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+			<block wx:for="{{background}}" wx:key="*this">
+				<swiper-item>
+					<view class="swiper-item" style="background: url('{{item.bannerImgUrl}}') center center no-repeat"></view>
+				</swiper-item>
+			</block>
+		</swiper>
+	</view>
+	<!-- swiper end -->
+
+	<!-- news-list start -->
+	<view class="news-list">
+		<view bind:tap="showArticleDetail" data-articleId="{{item.articleId}}" class="news-list-item" wx:for="{{newsList}}"
+			wx:key="articleid">
+			<view class="cover" style="background: url('{{item.coverImgUrl}}') center center no-repeat"></view>
+			<view class="title">{{item.title}}</view>
+		</view>
+	</view>
+	<!-- news-list end -->
+</view>

@@ -1,0 +1,20 @@
+/* pages/mine/mine.wxss */
+.mine {
+	padding: 20rpx;
+}
+
+.login {
+	margin: 40rpx auto;
+	background-color: #dce6e6;
+	border: none;
+}
+
+.userinfo-item {
+	margin: 40rpx 60rpx;
+}
+
+.avatar{
+	width: 128rpx;
+	height: 128rpx;
+	background-size: cover !important;
+}

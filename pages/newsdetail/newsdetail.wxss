@@ -1,0 +1,31 @@
+/* pages/newsdetail/newsdetail.wxss */
+
+.news-detail {
+	text-emphasis: left;
+	padding: 20rpx 40rpx;
+}
+
+.news-detail .title {
+	/* text-align: center; */
+	font-weight: 600;
+}
+
+.cover {
+	margin: 40rpx 0;
+	width: 100%;
+	min-height: 400rpx;
+	background-size: cover;
+}
+
+.article-source{
+	margin: 20rpx 0;
+	color: #8db2bb;
+}
+
+.content{
+	color: #696969;
+}
+
+.like{
+	margin: 20rpx 0;
+}

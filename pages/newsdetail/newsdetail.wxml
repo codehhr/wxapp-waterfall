@@ -1,0 +1,7 @@
+<view class="news-detail">
+	<view class="title">{{newsDetail.title}}</view>
+	<view class="article-source">{{newsDetail.articleSource}}</view>
+	<view class="cover" style="background: url({{newsDetail.coverImgUrl}}) center center no-repeat"></view>
+	<rich-text class="content" nodes="{{newsDetail.content}}"></rich-text>
+	<view class="like">👍 {{newsDetail.zan}} 人觉得很赞</view>
+</view>

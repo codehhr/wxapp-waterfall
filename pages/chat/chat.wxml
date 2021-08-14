@@ -1,0 +1,31 @@
+<view class="bgc"></view>
+<view wx:if="{{loadingSocket}}">
+	聊天室连接中...
+</view>
+<scroll-view class="chat-container" scroll-y scroll-into-view="{{'k'+list[list.length-1].id}}">
+	<view class="chat-item {{userName == item.from ? 'my-msg' : ''}}" wx:for="{{list}}" wx:key="index"
+		id="{{'k'+item.id}}">
+		<view class="avatar">
+			<image src="{{item.avatar}}"></image>
+		</view>
+		<view class="msg-box">
+			<view class="nickname" wx:if="{{userName !== item.from}}">
+				{{item.nickName}}
+			</view>
+			<view wx:if="{{item.type == 1}}" class="content-box">
+				{{item.content}}
+			</view>
+			<view wx:elif="{{item.type==2}}" class="img-content">
+				<image src="{{item.content}}" mode="widthFix"></image>
+			</view>
+		</view>
+	</view>
+</scroll-view>
+
+<view class="send-msg-container">
+	<input class="input" type="text" model:value="{{value}}" />
+	<view class="action-box">
+		<!-- <van-icon name="smile-o" class="icon" bind:tap="sendImg" /> -->
+		<van-button class="send-btn {{value?'send-btn-active':''}}" square type="primary" bind:tap="sendMsg">发送</van-button>
+	</view>
+</view>
