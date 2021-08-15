@@ -1,14 +1,17 @@
 <view class="page-section tc">
-	<video id="myVideo"
-		src="{{mvDetail.brs['1080'] || mvDetail.brs['720'] || mvDetail.brs['480'] || mvDetail.brs['240']}}"
-		binderror="videoErrorCallback" danmu-list="{{danmuList}}" enable-danmu danmu-btn show-center-play-btn='{{false}}'
-		show-play-btn="{{true}}" controls picture-in-picture-mode="{{['push', 'pop']}}"
-		bindenterpictureinpicture='bindVideoEnterPictureInPicture'
+	<video id="myVideo" src="{{mvDetail.url}}" binderror="videoErrorCallback" danmu-list="{{danmuList}}" enable-danmu
+		danmu-btn show-center-play-btn='{{false}}' show-play-btn="{{true}}" controls
+		picture-in-picture-mode="{{['push', 'pop']}}" bindenterpictureinpicture='bindVideoEnterPictureInPicture'
 		bindleavepictureinpicture='bindVideoLeavePictureInPicture'></video>
-	<view class="danmu">
-		<input bindblur="bindInputBlur" class="weui-input" type="text" placeholder="在此处输入弹幕内容" />
-		<button bindtap="bindSendDanmu" class="send-danmu" formType="submit">发送弹幕</button>
+	<view class="mv-detail">
+		<view class="danmu">
+			<input bindblur="bindInputBlur" class="weui-input" type="text" placeholder="在此处输入弹幕内容" />
+			<button bindtap="bindSendDanmu" class="send-danmu" formType="submit">发送弹幕</button>
+		</view>
+		<view class="name">{{mvDetail.data.name}}</view>
+		<view class="artist-name">{{mvDetail.data.artistName}}</view>
 	</view>
+
 	<!-- <navigator style="margin: 30rpx auto" url="picture-in-picture" hover-class="other-navigator-hover">
 		<button type="primary" class="page-body-button" bindtap="bindPlayVideo">小窗模式</button>
 	</navigator> -->

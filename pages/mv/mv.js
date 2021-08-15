@@ -24,7 +24,6 @@ Page({
         this.setData({
           mvList: this.data.mvList.concat(res.data.data),
         });
-        console.log(this.data.mvList[0]);
       }
     });
   },

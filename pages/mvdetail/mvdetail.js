@@ -34,12 +34,23 @@ Page({
   },
 
   getMvDetail(id) {
-    get(`http://music.163.com/api/mv/detail?id=${id}&type=mp4`).then((res) => {
+    get(`/music-api/mv/url?id=${id}`).then((res) => {
       if (res.data.code == 200) {
+        let mvDetail = this.data.mvDetail;
+        mvDetail.url = res.data.data.url;
         this.setData({
-          mvDetail: res.data.data,
-				});
-				console.log(res.data.data);
+          mvDetail,
+        });
+      }
+    });
+    get(`/music-api/mv/detail?mvid=${id}`).then((res) => {
+      if (res.data.code === 200) {
+        let mvDetail = this.data.mvDetail;
+        mvDetail.data = res.data.data;
+        this.setData({
+          mvDetail,
+        });
+        console.log(mvDetail.data);
       }
     });
   },
