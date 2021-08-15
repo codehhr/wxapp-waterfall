@@ -50,7 +50,6 @@ Page({
         this.setData({
           mvDetail,
         });
-        console.log(mvDetail.data);
       }
     });
   },

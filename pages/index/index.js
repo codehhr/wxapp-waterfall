@@ -101,7 +101,12 @@ Page({
       `/api/cms/article/open/detail/${e.currentTarget.dataset.articleid}`
     ).then((res) => {
       if (res.data.code == 0) {
-        app.globalData.newsDetail = res.data.data;
+        let tempData = res.data.data;
+        tempData.content = tempData.content.replace(
+          "<img",
+          "<img style='width: 100%;'"
+        );
+        app.globalData.newsDetail = tempData;
         wx.navigateTo({
           url: "/pages/newsdetail/newsdetail",
         });
